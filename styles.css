@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+#hero {
+  padding: 0 15%;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.6);
+  animation: zoomIn 0.8s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.header-logo {
+  font-size: 32px;
+  font-weight: 800;
+  color: #01B388;
+  cursor: pointer;
+}
+.header-logo span {
+  color: #228FEB;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-items {
+  font-size: 17px;
+  font-weight: 500;
+  color: grey;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.nav-items:hover {
+  color: #01B388;
+}
+
+.header-cta-btn {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 25px;
+  background-color: #01B388;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.header-cta-btn:hover {
+  background-color: #009270;
+}
+ 
+/* hero content */
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+.left-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.3;
+  margin-bottom: 30px;
+  width: 80%;
+  animation: bottomIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+h1 span {
+  color: #228FEB;
+}
+.left-content p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: grey;
+  margin-bottom: 30px;
+  animation: bottomIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+.big-cta-btn {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 13px 40px;
+  background-color: transparent;
+  color: #01B388;
+  border: 2px solid #01B388;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: bottomIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+.big-cta-btn:hover {
+  background-color: #01B388;
+  color: white;
+}
+.right-content {
+  display: flex;
+  align-items: center;
+}
+.hero-img {
+  width: 100%;
+  animation: zoomIn 1.2s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+
+}
+
+/* Animations */
+@keyframes bottomIn {
+  from {
+    transform: translateY(500px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes topIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,235 @@
+#service {
+  padding: 75px 15% ;
+  background-color: #F5F8FA;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #228FEB;
+  text-align: center;
+  margin-bottom: 50px;
+  animation: topIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.service-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+}
+.card-wrap {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  height: 310px;
+  width: 300px;
+  border: 2px solid #01B388;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px rgba(163, 163, 163, 0.808);
+  animation: zoomIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.card-icn {
+  font-size: 4rem;
+  color: #228FEB;
+  margin-bottom: 30px;
+}
+.card-title {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+.card-info {
+  font-size: 16px;
+  font-weight: 500;
+  color: grey;
+}
+.card-btn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #228FEB;
+  padding: 8px 15px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 30px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card-btn:hover {
+  background-color: #1c79c5;
+}
+
+/* About  */
+#about {
+  padding: 75px 15%;
+  overflow: hidden;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.left-about-content {
+  display: flex;
+  align-items: center;
+}
+.about-pic {
+  width: 100%;
+  animation: zoomIn 1.2s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.right-about-content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: grey;
+  margin-bottom: 40px;
+  animation: bottomIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+#about .section-title {
+  text-align: left;
+  animation: bottomIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.about-btn {
+  font-size:18px;
+  font-weight: 600;
+  background-color: #228FEB;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: bottomIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+.about-btn:hover {
+  background-color: #1c79c5;
+}
+
+/* Booking */
+#booking {
+  padding: 75px 15%;
+  overflow: hidden;
+  background-color: #F5F8FA;
+}
+
+.booking-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.right-booking {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.booking-img {
+  width: 80%;
+  animation: zoomIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.left-booking {
+  display: flex;
+  align-items: center;
+}
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #01B388;
+  border-radius: 20px;
+  padding: 50px 30px;
+  width: 100%;
+  animation: zoomIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.input-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #228FEB;
+  margin-bottom: 50px;
+}
+#booking input {
+  font-size: 18px;
+  font-weight: 500;
+  color: grey;
+  border: 2px solid #01B388;
+  border-radius: 10px;;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.submit-btn {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px;
+  width: 50%;
+  text-align: center;
+  background-color: #228FEB;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-cont {
+  display: flex;
+  justify-content: center;
+}
+.submit-btn:hover {
+  background-color: #1c79c5;
+}
+
+/* Footer */
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 50px 15%;
+  background-color: #dddddd;
+}
+#footer div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.footer-item {
+  font-size: 16px;
+  font-weight: 500;
+  color: grey;
+  cursor: pointer;
+  transition: 0.3;
+}
+
+.footer-item i {
+  width: 20px
+}
+.footer-item:hover {
+  color: white;
+}
+
+#copyright {
+  background-color: rgb(122, 122, 122);
+  color: white;
+  padding: 5px;
+}
+#copyright p {
+  text-align: center;
+}
